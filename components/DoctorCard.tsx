@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Doctor } from "@/lib/types";
 
 interface DoctorCardProps {
@@ -15,12 +14,12 @@ export default function DoctorCard({ doctor }: DoctorCardProps) {
         <div className="w-full md:w-1/4">
           <div className="aspect-square bg-gray-200 rounded-full overflow-hidden flex items-center justify-center">
             {doctor.photo ? (
-              <Image
+              <img
                 src={doctor.photo}
                 alt={`${doctor.name}'s photo`}
-                width={150} 
-                height={150} 
                 className="w-full h-full object-cover"
+                width="150"
+                height="150"
               />
             ) : (
               <svg
