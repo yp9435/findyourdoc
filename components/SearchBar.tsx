@@ -29,7 +29,6 @@ export default function SearchBar({ doctors, searchQuery, onSearch }: SearchBarP
 
   const suggestions = getSuggestions()
 
-  
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
@@ -43,28 +42,24 @@ export default function SearchBar({ doctors, searchQuery, onSearch }: SearchBarP
     }
   }, [])
 
- 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
     setInputValue(value)
     setShowSuggestions(true)
   }
 
-  
   const handleSuggestionClick = (suggestion: string) => {
     setInputValue(suggestion)
     onSearch(suggestion)
     setShowSuggestions(false)
   }
 
-  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     onSearch(inputValue)
     setShowSuggestions(false)
   }
 
-  
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
       onSearch(inputValue)
