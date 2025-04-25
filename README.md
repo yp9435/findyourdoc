@@ -47,13 +47,13 @@ This was a focused version of the platform for the assessment, but I'd love to k
 ---
 ## Screenshots
 
-### Home Page
+### Dashboard
 ![Home Page](https://github.com/yp9435/findyourdoc/blob/main/screenshots/1.png?raw=true)
 
-### Doctor List
+### Filter Panel
 ![Filter Panel](https://github.com/yp9435/findyourdoc/blob/main/screenshots/2.png?raw=true)
 
-### Filter Panel
+### Autocomplete 
 ![Autocomplete](https://github.com/yp9435/findyourdoc/blob/main/screenshots/3.png?raw=true)
 
 ---
