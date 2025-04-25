@@ -12,15 +12,14 @@ export default function DoctorCard({ doctor }: DoctorCardProps) {
       className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
     >
       <div className="flex flex-col md:flex-row gap-4">
-        {/* Doctor Photo */}
         <div className="w-full md:w-1/4">
           <div className="aspect-square bg-gray-200 rounded-full overflow-hidden flex items-center justify-center">
             {doctor.photo ? (
               <Image
                 src={doctor.photo}
                 alt={`${doctor.name}'s photo`}
-                width={150} // Adjust width as needed
-                height={150} // Adjust height as needed
+                width={150} 
+                height={150} 
                 className="w-full h-full object-cover"
               />
             ) : (
@@ -40,7 +39,6 @@ export default function DoctorCard({ doctor }: DoctorCardProps) {
           </div>
         </div>
 
-        {/* Doctor Details */}
         <div className="w-full md:w-3/4">
           <h2 data-testid="doctor-name" className="text-xl font-bold mb-2">
             {doctor.name}

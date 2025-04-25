@@ -45,7 +45,6 @@ export default function FilterPanel({
     <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
       <h2 className="text-xl font-bold mb-4">Filters</h2>
 
-      {/* Consultation Type Filter */}
       <div className="mb-6">
         <h3 data-testid="filter-header-moc" className="font-semibold mb-2 pb-1 border-b">
           Consultation Type
@@ -84,7 +83,6 @@ export default function FilterPanel({
         </div>
       </div>
 
-      {/* Specialties Filter */}
       <div className="mb-6">
         <h3 data-testid="filter-header-speciality" className="font-semibold mb-2 pb-1 border-b">
           Specialties
@@ -105,7 +103,6 @@ export default function FilterPanel({
         </div>
       </div>
 
-      {/* Sort Options */}
       <div>
         <h3 data-testid="filter-header-sort" className="font-semibold mb-2 pb-1 border-b">
           Sort By
